@@ -1,0 +1,256 @@
+* {
+  margin: -4;
+  padding: -4;
+  font-family: cursive;
+}
+/* top page */
+#topPage{
+  position: fixed;
+  top: 39rem;
+  right: 5rem;
+  font-size: 3rem;
+  color: rgba(11, 109, 126, 0.3);
+  z-index: 3000;
+  opacity: 0;
+}
+#topPage:hover{
+  color: rgba(11, 109, 126);
+  transform: scale(1.12);
+}
+/* ------ navabr ---------- */
+#count{
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  background-color: rgb(78, 188, 78) ;
+  color:white;
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  font-size: 15px;
+}
+.navbarBackGround {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /* background-color: #328d9d; */
+  box-shadow:2px 2px 7px rgb(145, 145, 145) ;
+  background: linear-gradient(
+    to right,
+    rgb(50, 141, 157) 0%,
+    rgb(50, 141, 157) 29%,
+    rgb(247, 247, 247) 29%,
+    rgb(247, 247, 247) 100%
+  );
+}
+.linex{
+  border-right: 1.7px solid #4bb8cb;
+}
+.navbarBackGround .titles_nav:hover h6,
+.icons_nav i:hover,
+.icons_nav span:hover {
+  color: #2baec5;
+}
+.navbarBackGround .titles_nav:hover h6{
+  font-weight: bolder;
+}
+.navbar_up p {
+  font-size: 0.9rem;
+}
+
+/* ---------- slider ---------- */
+.slider {
+  height: 55rem;
+  filter: brightness(80%);
+  overflow: hidden;
+  background-image: url("../images/3.jpg");
+  background-repeat: no-repeat;
+  
+}
+.text_slider {
+  color: rgb(255, 255, 255);
+  background-color: rgba(75, 81, 81, 0.186);
+}
+
+.button_slider {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55rem;
+}
+.button_slider button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  line-height: 1rem;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: rgb(43, 43, 43);
+  visibility: hidden;
+
+}
+
+.slider:hover button{
+  visibility: visible;
+  
+}
+
+.button_slider button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255);
+}
+
+.button_slider button:first-child:hover {
+  transform: translatex(-5px);
+}
+.button_slider button:last-child:hover {
+  position: relative;
+  left: 5px;
+}
+
+/**********    top_products        ******/
+
+.categories button {
+  width: 10rem;
+  background-color: #328d9d;
+  color: aliceblue;
+}
+
+.product_card button{
+  width: 10rem;
+  
+}
+.product_card{
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.product_card:hover{
+  box-shadow: 2px 2px 10px rgb(163, 163, 163);
+  transform: scale(1.055);
+}
+.categories button:hover {
+  background-color: #1e2b2e;
+  color:aliceblue;
+  transform: scale(1.25);
+ 
+}
+
+.top_products .product_card {
+  background-color: #ebebeb;
+  
+}
+
+
+
+
+/** logos **/
+
+.logos {
+  background-color: #f6f6f6;
+}
+
+/**  get our news letter   **/
+
+.img_contain {
+  width: 30rem;
+  border: 1rem solid white;
+  overflow: hidden;
+
+}
+.news_letter {
+  position: relative;
+  height: 48rem;
+}
+.news_letter .img_contain:last-child {
+  position: absolute;
+  right: 35rem;
+  top: 8rem;
+
+}
+.img_contain img{
+
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.img_contain img:hover{
+  transform: scale(1.1);
+}
+
+
+
+/* About */
+.about_content{
+  position: relative;
+  height: 58rem;
+}
+.part1,.part2{
+  width: 40rem;
+  height: 40rem;
+}
+.part1 img ,.part2 img{
+  border-radius: 3rem;
+}
+.part1{
+  margin: 3rem;
+  position: absolute;
+  right: 8rem;
+}
+.part2{
+  margin: 3rem;
+  position: absolute;
+  right: 36rem;
+  top: 13rem;
+}
+.words_about{
+  width: 25rem;
+  height: 30rem;
+  background-color: #3d5f75;
+  border-radius: 2rem;
+  position: absolute;
+  top: 25rem;
+  right: 10rem;
+  box-shadow: 10px 10px 20px rgb(171, 171, 171) ;
+  color: #ffffff;
+  
+}
+
+
+/* form */
+/* .b,select{
+  box-shadow:inset 1px 1px 1px 1px rgb(228, 55, 55);
+} */
+input[type="submit"], input[type="reset"]{
+  box-shadow: 2px 2px 5px rgb(20, 19, 19);
+}
+
+
+
+
+/**   test         ***/
+/* .navbarBackGround1{
+  background: linear-gradient(
+    to right,
+    #328d9d 0%,
+    #328d9d 29%,
+    rgba(255, 255, 255) 29%,
+    rgba(255, 255, 255) 100%
+  );
+}
+.navbarBackGround2{
+  background: linear-gradient(
+    to right,
+    #328d9d 0%,
+    #328d9d 29%,
+    rgba(218, 218, 218,0.5) 29%,
+    rgba(218, 218, 218,0.5)  100%
+  );
+ 
+} */

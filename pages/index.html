@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CapHut</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-icons-1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/styleIndex.css" />
+  </head>
+  <body>
+    <!-- to top of the page -->
+    <i class="bi bi-arrow-up-circle-fill" id="topPage"></i>
+    <!-- navbar -->
+
+    <div class="container-fluid navbarBackGround">
+      <div class="container">
+        <div class="row" style="background-color: #328d9d">
+          <div class="col-3 text-white fs-1 pt-4 d-none d-lg-block">
+            <a name="home" href="index.html">
+
+              <img src="../images/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="col-9 bg-white">
+            <div class="row navbar_up pt-4">
+              <div class="col-12 col-md-4 titles_nav">
+                <div class="row">
+                  <div class="col-3">
+                    <i
+                      class="bi bi-airplane fs-1 ps-3"
+                      style="color: #328d9d"
+                    ></i>
+                  </div>
+                  <div class="col-9">
+                    <h6>Free Worldwide Shipping</h6>
+                    <p class="text-secondary">On order over $150</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 titles_nav">
+                <div class="row">
+                  <div class="col-3">
+                    <i
+                      class="bi bi-wallet2 fs-1 ps-3"
+                      style="color: #328d9d"
+                    ></i>
+                  </div>
+                  <div class="col-9">
+                    <h6>Money Back Guarantee</h6>
+                    <p class="text-secondary">Cash on delivery</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 titles_nav">
+                <div class="row">
+                  <div class="col-3">
+                    <i
+                      class="bi bi-headset fs-1 text-center ps-3"
+                      style="color: #328d9d"
+                    ></i>
+                  </div>
+                  <div class="col-9">
+                    <h6>Best Online Support</h6>
+                    <p class="text-secondary">Call us 24/7 at 123-456-789</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="row fw-bold"
+              style="background-color: rgb(230, 230, 230)"
+            >
+              <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item px-2">
+                        <a
+                          class="nav-link text-uppercase"
+                          aria-current="page"
+                          href="index.html"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link text-uppercase" href="#">shop</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link text-uppercase" href="#"
+                          >designer caps</a
+                        >
+                      </li>
+                      <li class="nav-item px-2">
+                        <a href="about.html" class="nav-link text-uppercase">about</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a href="./contact.html" class="nav-link text-uppercase">contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="fs-5 icons_nav">
+                    <i class="bi bi-search linex pe-3"></i>
+                    <i class="bi bi-person linex pe-2 ps-1"></i>
+                    <i class="bi bi-cart px-2" style="position: relative;"> 
+                      <span id="count" >0</span>
+                     </i>
+                    <span>-$0.000</span>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- slider -->
+    <div class="slider">
+      <div class="button_slider">
+        <button class="mx-5"><</button>
+        <button class="mx-5">></button>
+      </div>
+      <div class="text_slider carousel-caption">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quo
+        obcaecati dolorum velit delectus ipsam. Repellendus excepturi dolorum
+        voluptate molestiae, explicabo totam rem dolore, distinctio quibusdam
+        qui est ipsum ut.
+      </div>
+    </div>
+
+    <!-- top products -->
+    <div class="container top_products">
+      <div class="row">
+        <h1 class="col-12 text-center p-5">TOP PRODUCTS</h1>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center categories">
+          <button class="btn mx-3">Featured</button>
+          <button class="btn mx-3">Latest</button>
+          <button class="btn mx-3">Best Seller</button>
+          <button class="btn mx-3">All</button>
+        </div>
+      </div>
+    </div>
+      <!-- fetured -->
+      <div class="container top_products featured">
+      <div class="row text-center my-5 ">
+        <div class="col-12 col-md-4 p-3">
+          <div class="product_card p-3">
+            <img
+              src="../images/half hat.jpg"
+              alt=""
+              class="img-fluid rounded-5"
+            />
+            <p class="pt-3 fs-5">Half Hat</p>
+            <p class="rating">
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+            </p>
+            <p class="price fw-bold">$110.00</p>
+            <button class="btn btn-outline-secondary my-3">ADD To Cart</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 p-3">
+          <div class="product_card p-3">
+            <img
+              src="../images/sun cap.jpg"
+              alt=""
+              class="img-fluid rounded-5"
+            />
+            <p class="pt-3 fs-5">Sun Cap</p>
+            <p class="rating">
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star text-warning fs-5"></i>
+            </p>
+            <p class="price fw-bold">$170.00</p>
+            <button class="btn btn-outline-secondary my-3">ADD To Cart</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 p-3">
+          <div class="product_card p-3">
+            <img
+              src="../images/garden cap.jpg"
+              alt=""
+              class="img-fluid rounded-5"
+            />
+            <p class="pt-3 fs-5">Grand Cap</p>
+            <p class="rating">
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-half text-warning fs-5"></i>
+              <i class="bi bi-star text-warning fs-5"></i>
+            </p>
+            <p class="price fw-bold">$85.00</p>
+            <button class="btn btn-outline-secondary my-3">ADD To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Latest -->
+    <div class="container top_products latest">
+      <div class="row text-center my-5 ">
+        <div class="col-12 col-md-4 p-3">
+          <div class="product_card p-3">
+            <img
+              src="../images/trucker cap.jpg"
+              alt=""
+              class="img-fluid rounded-5"
+            />
+            <p class="pt-3 fs-5">Trucker Cap</p>
+            <p class="rating">
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star text-warning fs-5"></i>
+              <i class="bi bi-star text-warning fs-5"></i>
+            </p>
+            <p class="price fw-bold">$122.00</p>
+            <button class="btn btn-outline-secondary my-3">ADD To Cart</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 p-3">
+          <div class="product_card p-3">
+            <img
+              src="../images/printed cap.jpg"
+              alt=""
+              class="img-fluid rounded-5"
+            />
+            <p class="pt-3 fs-5">Printed Cap</p>
+            <p class="rating">
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star text-warning fs-5"></i>
+            </p>
+            <p class="price fw-bold">$210.00</p>
+            <button class="btn btn-outline-secondary my-3">ADD To Cart</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 p-3">
+          <div class="product_card p-3">
+            <img
+              src="../images/ball cap.jpg"
+              alt=""
+              class="img-fluid rounded-5"
+            />
+            <p class="pt-3 fs-5">Ball Cap</p>
+            <p class="rating">
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-half text-warning fs-5"></i>
+              <i class="bi bi-star text-warning fs-5"></i>
+            </p>
+            <p class="price fw-bold">$135.00</p>
+            <button class="btn btn-outline-secondary my-3">ADD To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Best Seller -->
+    <div class="container top_products best_seller">
+      <div class="row text-center my-5 ">
+        <div class="col-12 col-md-4 p-3">
+          <div class="product_card p-3">
+            <img src="../images/beret.jpg" alt="" class="img-fluid rounded-5" />
+            <p class="pt-3 fs-5">Beret Cap</p>
+            <p class="rating">
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star text-warning fs-5"></i>
+            </p>
+            <p class="price fw-bold">$98.00</p>
+            <button class="btn btn-outline-secondary my-3">ADD To Cart</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 p-3">
+          <div class="product_card p-3">
+            <img src="../images/ascot.jpg" alt="" class="img-fluid rounded-5" />
+            <p class="pt-3 fs-5">Ascot Cap</p>
+            <p class="rating">
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-half text-warning fs-5"></i>
+            </p>
+            <p class="price fw-bold">$100.00</p>
+            <button class="btn btn-outline-secondary my-3">ADD To Cart</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 p-3">
+          <div class="product_card p-3">
+            <img src="../images/water.jpg" alt="" class="img-fluid rounded-5" />
+            <p class="pt-3 fs-5">Water Sport Cap</p>
+            <p class="rating">
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-fill text-warning fs-5"></i>
+              <i class="bi bi-star-half text-warning fs-5"></i>
+              <i class="bi bi-star text-warning fs-5"></i>
+            </p>
+            <p class="price fw-bold">$110.00</p>
+            <button class="btn btn-outline-secondary my-3">ADD To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- logos -->
+    <div class="container logos">
+      <div class="row mb-5 p-4">
+        <div class="col-2 text-center">
+          <img src="../images/2-76x40.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-2 text-center">
+          <img src="../images/3-76x40.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-2 text-center">
+          <img src="../images/4-76x40.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-2 text-center">
+          <img src="../images/5-76x40.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-2 text-center">
+          <img src="../images/6-76x40.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-2 text-center">
+          <img src="../images/7-76x40.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- get our news letter -->
+
+    <section
+      class="container-fluid"
+      style="background-color: rgb(244, 244, 244)"
+    >
+      <div class="container py-5">
+        <div class="row news_letter">
+          <div class="col-6 d-none d-lg-block">
+            <div class="img_contain">
+              <img src="../images/6.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="img_contain">
+              <img src="../images/7.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 offset-2 d-flex flex-column justify-content-center"
+          >
+            <p>
+              <span style="color: #328d9d" class="fs-4">____</span> subscribe
+            </p>
+            <h1 class="display-1" style="color: #328d9d">Get Our Newsletter</h1>
+            <p class="my-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+              corporis rem aliquam molestiae ut voluptas magni ex
+            </p>
+            <input
+              type="text"
+              placeholder="Enter Your Email..."
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="container-fluid bg-black text-secondary">
+      <div class="row pt-5 bg-black">
+        <div class="col-12 col-md-6 col-lg-3 ps-5">
+          <img src="../images/logo.png" alt="" />
+          <span class="d-block"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+            esse dolorem animi corrupti doloremque eaque. Cumque ullam nisi
+            placeat, enim omnis
+          </span>
+          <div class="pt-3 fs-2">
+            <i class="pe-2 text-primary bi bi-facebook"></i>
+            <i class="pe-2 text-info bi bi-twitter"></i>
+            <i class="pe-2 text-danger bi bi-google"></i>
+            <i class="pe-2 text-success-emphasis bi bi-instagram"></i>
+            <i class="pe-2 text-danger bi bi-youtube"></i>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h5 class="text-white">INFORMATION</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3">About Us</li>
+            <li class="pt-3">Delivery Information</li>
+            <li class="pt-3">Privacy Policy</li>
+            <li class="pt-3">Terms & Conditions</li>
+            <li class="pt-3">Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2">
+          <h5 class="text-white">MY ACCOUNT</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3">My Account</li>
+            <li class="pt-3">Order History</li>
+            <li class="pt-3">Wish List</li>
+            <li class="pt-3">Newsletter</li>
+            <li class="pt-3">Returns</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h5 class="text-white">EXTRAS</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3">Brands</li>
+            <li class="pt-3">Gift Certificates</li>
+            <li class="pt-3">Affiliate</li>
+            <li class="pt-3">Specials</li>
+            <li class="pt-3">Site Map</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="text-white">CONTACT INFO</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3">
+              Address: 2548 Broaddus Maple Court Avenue, Madisonville KY, USA
+            </li>
+            <li class="pt-3">Phone: +91 123 456 789</li>
+            <li class="pt-3">Fax: 0123-456-789</li>
+            <li class="pt-3">Email: demo@Yourstore.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row" style="height: 3rem">
+        <div class="col-12 col-lg-9 ps-5">
+          Powered By OpenCart Your Store © 2023
+        </div>
+        <div class="col-12 col-lg-3">
+          <img src="../images/payment.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/demo.js"></script>
+  </body>
+</html>

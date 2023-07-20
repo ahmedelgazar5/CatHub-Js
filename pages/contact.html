@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CapHut</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-icons-1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/styleIndex.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="container-fluid navbarBackGround">
+      <div class="container">
+        <div class="row" style="background-color: #328d9d">
+          <div class="col-3 text-white fs-1 pt-4 d-none d-lg-block">
+            <a name="home" href="index.html">
+
+              <img src="../images/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="col-9 bg-white">
+            <div class="row navbar_up pt-4">
+              <div class="col-12 col-md-4 titles_nav">
+                <div class="row">
+                  <div class="col-3">
+                    <i
+                      class="bi bi-airplane fs-1 ps-3"
+                      style="color: #328d9d"
+                    ></i>
+                  </div>
+                  <div class="col-9">
+                    <h6>Free Worldwide Shipping</h6>
+                    <p class="text-secondary">On order over $150</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 titles_nav">
+                <div class="row">
+                  <div class="col-3">
+                    <i
+                      class="bi bi-wallet2 fs-1 ps-3"
+                      style="color: #328d9d"
+                    ></i>
+                  </div>
+                  <div class="col-9">
+                    <h6>Money Back Guarantee</h6>
+                    <p class="text-secondary">Cash on delivery</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 titles_nav">
+                <div class="row">
+                  <div class="col-3">
+                    <i
+                      class="bi bi-headset fs-1 text-center ps-3"
+                      style="color: #328d9d"
+                    ></i>
+                  </div>
+                  <div class="col-9">
+                    <h6>Best Online Support</h6>
+                    <p class="text-secondary">Call us 24/7 at 123-456-789</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="row fw-bold"
+              style="background-color: rgb(230, 230, 230)"
+            >
+              <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item px-2">
+                        <a
+                          class="nav-link text-uppercase"
+                          aria-current="page"
+                          href="index.html"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link text-uppercase" href="#">shop</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link text-uppercase" href="#"
+                          >designer caps</a
+                        >
+                      </li>
+                      <li class="nav-item px-2">
+                        <a href="about.html" class="nav-link text-uppercase"
+                          >about</a
+                        >
+                      </li>
+                      <li class="nav-item px-2">
+                        <a href="./contact.html" class="nav-link text-uppercase"
+                          >contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="fs-5 icons_nav">
+                    <i class="bi bi-search linex pe-3"></i>
+                    <i class="bi bi-person linex pe-2 ps-1"></i>
+                    <i class="bi bi-cart px-2" style="position: relative"><span id="count">0</span></i>
+                    <span>-$0.000</span>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- form -->  
+    <div class="container my-5">
+      <div class="row mt-5">
+        <div class="col-6 offset-3">
+          <form action="" class="form-inline" onsubmit="mySubmit(event)">
+            <div class="form-group">
+              <label for="">Name</label>
+              <input type="text" class="form-control b" placeholder="enter your name" onchange="validName()"/>
+            <p id="name" style="color:red; visibility: hidden;">Inter Valid Name (Name must be more than 3 characters) </p>
+            </div>
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="text" class="form-control b" placeholder="enter your email" onchange="validEmail()" />
+              <p id="email1" style="color:red; opacity: 0;">Email is Required</p>
+            </div>
+            <div class="form-group">
+              <label for="">Password</label>
+              <input type="password" class="form-control b" placeholder="enter your password" onchange="validPass()" />
+              <p id="pass" style="color:red; opacity: 0;">Password must be at least 8 chars</p>
+            </div>
+            <div class="form-group">
+              <label for="">Phone</label>
+              <input type="text" class="form-control b" placeholder="enter your phone" onchange="validPhone()" />
+              <p id="phone" style="color:red; opacity: 0;">invalid phone (missing number or using letters)</p>
+            </div>
+           
+            
+            <div class="">
+              <label for="">Country</label>
+              <select class="form-select" onblur="validCountry()" >
+                <option selected>--- Select ---</option>
+                <option value="1">egy</option>
+                <option value="2">saudi</option>
+                <option value="3">qatar</option>
+              </select>
+              <p id="country" style="color:red; opacity: 0;">country is required</p>
+            </div>
+            <div class="row text-danger fs-5 px-3 opacity-0" id="formValid">invalid data recheck</div>
+            <input type="submit" class="btn btn-success mt-4 m-auto d-block w-100 fs-5" >
+           
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid bg-black text-secondary">
+      <div class="row pt-5 bg-black">
+        <div class="col-12 col-md-6 col-lg-3 ps-5">
+          <img src="../images/logo.png" alt="" />
+          <span class="d-block"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+            esse dolorem animi corrupti doloremque eaque. Cumque ullam nisi
+            placeat, enim omnis
+          </span>
+          <div class="pt-3 fs-2">
+            <i class="pe-2 text-primary bi bi-facebook"></i>
+            <i class="pe-2 text-info bi bi-twitter"></i>
+            <i class="pe-2 text-danger bi bi-google"></i>
+            <i class="pe-2 text-success-emphasis bi bi-instagram"></i>
+            <i class="pe-2 text-danger bi bi-youtube"></i>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h5 class="text-white">INFORMATION</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3">About Us</li>
+            <li class="pt-3">Delivery Information</li>
+            <li class="pt-3">Privacy Policy</li>
+            <li class="pt-3">Terms & Conditions</li>
+            <li class="pt-3">Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2">
+          <h5 class="text-white">MY ACCOUNT</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3">My Account</li>
+            <li class="pt-3">Order History</li>
+            <li class="pt-3">Wish List</li>
+            <li class="pt-3">Newsletter</li>
+            <li class="pt-3">Returns</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h5 class="text-white">EXTRAS</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3">Brands</li>
+            <li class="pt-3">Gift Certificates</li>
+            <li class="pt-3">Affiliate</li>
+            <li class="pt-3">Specials</li>
+            <li class="pt-3">Site Map</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="text-white">CONTACT INFO</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3">
+              Address: 2548 Broaddus Maple Court Avenue, Madisonville KY, USA
+            </li>
+            <li class="pt-3">Phone: +91 123 456 789</li>
+            <li class="pt-3">Fax: 0123-456-789</li>
+            <li class="pt-3">Email: demo@Yourstore.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row" style="height: 3rem">
+        <div class="col-12 col-lg-9 ps-5">
+          Powered By OpenCart Your Store © 2023
+        </div>
+        <div class="col-12 col-lg-3">
+          <img src="../images/payment.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/democontact.js"></script>
+  </body>
+</html>
